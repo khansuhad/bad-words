@@ -24,16 +24,11 @@ The checkInappropriate function checks if a sentence or paragraph contains any i
 ```javascript
 import checkInappropriate from "@suhadahmodkhan/no-bad-words";
 
-const Check = () => {
-  const checkWords = async () => {
-    const check = await checkInappropriate("This is a bad sentence with some inappropriate words.");
-    console.log(check);
-  };
 
-  checkWords();
-};
+const check =  checkInappropriate("This is a bad sentence with some inappropriate words.");
+console.log(check);
 
-export default Check;
+
 ```
 ### Example 2: Handling the Result
 The checkInappropriate function returns an object with the following structure:
@@ -52,8 +47,8 @@ You can handle the result as follows:
 
 import checkInappropriate from "@suhadahmodkhan/no-bad-words";
 
-const checkSentence = async (sentence) => {
-  const result = await checkInappropriate(sentence);
+const checkSentence =  (sentence) => {
+  const result =  checkInappropriate(sentence);
 
   if (result.hasBadWords) {
     console.log(`Bad words found: ${result.badWords.join(", ")}`);
@@ -77,8 +72,8 @@ const App = () => {
   const [input, setInput] = useState("");
   const [result, setResult] = useState(null);
 
-  const handleCheck = async () => {
-    const checkResult = await checkInappropriate(input);
+  const handleCheck =  () => {
+    const checkResult =  checkInappropriate(input);
     setResult(checkResult);
   };
 
@@ -109,10 +104,8 @@ const App = () => {
 export default App;
 ```
 ## API Reference
-checkInappropriate(sentence: string): Promise<{ hasBadWords: boolean, badWords: string[], count: number }>
+checkInappropriate(sentence: string): { hasBadWords: boolean, badWords: string[], count: number }
 sentence: The sentence or paragraph to check for inappropriate words.
-
-Returns: A promise that resolves to an object with the following properties:
 
 hasBadWords: A boolean indicating whether bad words were found.
 
