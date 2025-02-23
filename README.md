@@ -43,7 +43,7 @@ The checkInappropriate function returns an object with the following structure:
 {
   hasBadWords: true, // or false if no bad words are found
   badWords: ["bad", "inappropriate"], // list of bad words found
-  count: 2 // number of bad words found
+  badCount: 2 // number of bad words found
 }
 ```
 You can handle the result as follows:
@@ -118,4 +118,4 @@ hasBadWords: A boolean indicating whether bad words were found.
 
 badWords: An array of bad words found in the sentence.
 
-count: The total number of bad words found.
+badCount: The total number of bad words found.
