@@ -1,0 +1,26 @@
+{
+  "name": "@suhadahmodkhan/no-bad-words",
+  "version": "1.0.1",
+  "description": "no inappropriate words",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khansuhad/bad-words.git"
+  },
+  "keywords": [
+    "bad-words",
+    "inappopriate-words"
+  ],
+  "author": "suhad ahmod khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khansuhad/bad-words/issues"
+  },
+  "homepage": "https://github.com/khansuhad/bad-words#readme",
+  "dependencies": {
+    "bad-words": "^4.0.0"
+  }
+}
