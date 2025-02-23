@@ -1,5 +1,4 @@
-markdown
-Copy
+
 # No Bad Words - Inappropriate Word Checker
 
 A simple and lightweight npm package to check for inappropriate words (bad words) in a sentence or paragraph. It detects if any words from a predefined list of bad words are present and returns the list of bad words along with their count.
